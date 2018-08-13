@@ -493,8 +493,8 @@ void ProtoNNPredictor::saveTopKScores(std::string filename, int topk)
   const dataCount_t n = testData.Ytest.cols();
   assert(n > 0);
 
-  if (topk < 1)
-    topk = 5;
+  if (topk == 0)
+    topk = model.hyperParams.l;
 
   if (filename.empty())
       filename = outDir + "/detailedPrediction";

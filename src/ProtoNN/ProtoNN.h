@@ -282,7 +282,7 @@ namespace EdgeML
 
       ResultStruct test();
 
-      void saveTopKScores(std::string filename="", int topk=5);
+      void saveTopKScores(std::string filename="", int topk=0);
       
       void normalize();
     };
