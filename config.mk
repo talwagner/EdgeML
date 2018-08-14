@@ -18,6 +18,6 @@ MKL_PAR_STATIC_LDFLAGS = -Wl,--start-group /opt/intel/mkl/lib/intel64/libmkl_int
 CILK_LDFLAGS = -lcilkrts
 CILK_FLAGS = -fcilkplus -DCILK
 
-CC=g++-5
+CC=g++
 
 CFLAGS= -p -g -fPIC -O3 -std=c++11 -DLINUX $(DEBUGGING_FLAGS) $(CONFIG_FLAGS) $(MKL_EIGEN_FLAGS) $(CILK_FLAGS)
