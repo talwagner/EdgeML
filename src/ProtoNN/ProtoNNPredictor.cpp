@@ -494,7 +494,7 @@ void ProtoNNPredictor::saveTopKScores(std::string filename, int topk)
   assert(n > 0);
 
   if (topk == 0)
-    topk = model.hyperParams.l;
+      topk = model.hyperParams.l;
 
   if (filename.empty())
       filename = outDir + "/detailedPrediction";
